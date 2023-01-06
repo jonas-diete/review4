@@ -1,5 +1,8 @@
 const stringEvaluator = (mathsString) => {
-  return ["1", 1.0];
+  let resultsArray = [];
+  resultsArray.push(mathsString);
+  resultsArray.push(parseFloat(mathsString));
+  return resultsArray;
 }
 
 module.exports = stringEvaluator;
