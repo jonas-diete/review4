@@ -5,7 +5,9 @@ const stringEvaluator = (mathsString) => {
     resultsArray.push(parseFloat(mathsString));
     return resultsArray;
   } else {
-    return ["1 + 1", 2.0];
+    let firstElement = parseFloat(mathsString[0]);
+    let secondElement = parseFloat(mathsString[4]);
+    return [mathsString, parseFloat(firstElement + secondElement)];
   }
 }
 

@@ -16,4 +16,8 @@ describe('stringEvaluator', () => {
   it('returns results for string with two elements correctly', () => {
     expect(stringEvaluator("1 + 1")).toEqual(["1 + 1", 2.0])
   })
+
+  it('returns results for string with two elements correctly', () => {
+    expect(stringEvaluator("3 + 4")).toEqual(["3 + 4", 7.0])
+  })
 }) 
